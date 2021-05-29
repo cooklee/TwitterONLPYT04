@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for obj in  object_list%}
+        <p>
+            {{ obj.text }}
+            {% if user == obj.owner %}
+                <a href="{% url 'update_tweets' obj.pk%}">u </a> <a href="{% url 'delete_tweets' obj.pk%}">x</a>
+            {% endif %}
+        <h6> {{ obj.creation_date }} {{ obj.owner.username }}</h6>
+        </p>
+    {% endfor %}
+
+{% endblock %}
