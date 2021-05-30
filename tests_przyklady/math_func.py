@@ -12,3 +12,4 @@ if __name__ == "__main__":
     assert add(0, 0) == 0
     assert add(0, 10) == 0
 
+
