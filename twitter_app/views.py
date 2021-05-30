@@ -23,7 +23,7 @@ class TweetListView(ListView):
 class CreateTweetView(CreateView):
     model = Tweet
     template_name = 'form.html'
-    fields = ['text']
+    fields = ['text', 'category']
     success_url = reverse_lazy('tweets')
 
     def form_valid(self, form):

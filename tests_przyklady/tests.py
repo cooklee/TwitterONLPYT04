@@ -1,4 +1,4 @@
-from testowanie_przyklady.math_func import add
+from math_func import add
 
 
 def test_add_1_1():
